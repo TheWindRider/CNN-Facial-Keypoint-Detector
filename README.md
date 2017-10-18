@@ -15,3 +15,13 @@ Refer to notebook for all packages needed
 Download data from [Kaggle](https://www.kaggle.com/c/facial-keypoints-detection/data)
 
 Unzip training and testing as two .csv file in data folder
+
+### Code
+All Python code reside in AIND_Capstone.ipynb, and it has four major sections
+1. Libraries and utility functions
+2. Face and eye detections using OpenCV's pre-trained model
+3. Training a neural network to identify facial keypoints
+4. Running detection functions on both images and camera video feed
+
+### Reference
+This is a consolidated version of my capstone project in Udacity AI Nanodegree program, and some utility functions are direct reuse of [this GitHub repo](https://github.com/udacity/AIND-CV-FacialKeypoints), and other parts of my code followed its templates and instructions. 
