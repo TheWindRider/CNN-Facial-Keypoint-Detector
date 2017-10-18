@@ -5,6 +5,7 @@
 - detector_architectures: folder to keep OpenCV pre-trained model to recognize faces and eyes
 - AIND_Capstone.ipynb: python notebook with all code
 - cnn_tuning.xlsx: many experiments to tune the global parameters of the neural network, which help finalize the best set of parameters used in the notebook
+- my_model.h5: one of the best result, 5.6M parameters, validation loss around 9e-4, file size 44MB
 
 ### Environment
 Python 3.5 with Keras, which should be set to use Tensorflow as backend
