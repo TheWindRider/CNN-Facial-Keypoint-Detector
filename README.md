@@ -6,6 +6,7 @@
 - AIND_Capstone.ipynb: python notebook with all code
 - cnn_tuning.xlsx: many experiments to tune the global parameters of the neural network, which help finalize the best set of parameters used in the notebook
 - my_model.h5: one of the best result, 5.6M parameters, validation loss around 9e-4, file size 44MB
+- utils.py: utility functions
 
 ### Environment
 Python 3.5 with Keras, which should be set to use Tensorflow as backend
@@ -18,11 +19,13 @@ Download data from [Kaggle](https://www.kaggle.com/c/facial-keypoints-detection/
 Unzip training and testing as two .csv file in data folder
 
 ### Code
-All Python code reside in AIND_Capstone.ipynb, and it has four major sections
+Most Python code reside in AIND_Capstone.ipynb, and it has four major sections
 1. Libraries and utility functions
 2. Face and eye detections using OpenCV's pre-trained model
 3. Training a neural network to identify facial keypoints
 4. Running detection functions on both images and camera video feed
+
+Some utility functions not directly related to neural network or image processing are in utils.py
 
 ### Reference
 This is a consolidated version of my capstone project in Udacity AI Nanodegree program, and some utility functions are direct reuse of [this GitHub repo](https://github.com/udacity/AIND-CV-FacialKeypoints), and other parts of my code followed its templates and instructions. 
