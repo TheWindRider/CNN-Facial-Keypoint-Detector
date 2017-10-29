@@ -3,7 +3,7 @@
 ### List of Content
 - data: folder to keep training and testing image data files to train neural network to recognize facial keypoints
 - detector_architectures: folder to keep OpenCV pre-trained model to recognize faces and eyes
-- iamges: additional image data not used for facial keypoint recognition
+- images: additional image data not used for facial keypoint recognition
 - AIND_Capstone.ipynb: python notebook with all code
 - cnn_tuning.xlsx: many experiments to tune the global parameters of the neural network, which help finalize the best set of parameters used in the notebook
 - utils.py: utility functions
