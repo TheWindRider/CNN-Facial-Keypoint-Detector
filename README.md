@@ -1,11 +1,11 @@
 # Facial-Keypoint-Detector
 
 ### List of Content
-- data: folder to keep training and testing data file to train neural network to recognize facial keypoints
+- data: folder to keep training and testing image data files to train neural network to recognize facial keypoints
 - detector_architectures: folder to keep OpenCV pre-trained model to recognize faces and eyes
+- iamges: additional image data not used for facial keypoint recognition
 - AIND_Capstone.ipynb: python notebook with all code
 - cnn_tuning.xlsx: many experiments to tune the global parameters of the neural network, which help finalize the best set of parameters used in the notebook
-- my_model.h5: one of the best result, 5.6M parameters, validation loss around 9e-4, file size 44MB
 - utils.py: utility functions
 
 ### Environment
