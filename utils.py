@@ -52,3 +52,22 @@ def plot_two_image(imageA, imageB, titleA='Image A', titleB='Image B', grayB=Fal
     ax2.set_title(titleB)
     if grayB: ax2.imshow(imageB, cmap='gray')
     else: ax2.imshow(imageB)
+
+"""
+Image Augmentation: Horizontal and Vertical Shift
+"""
+def shift_img(img, landmarks=[], x_shift=0, y_shift=0):
+    # shift image
+    num_rows, num_cols = img.shape[:2]
+    translation_matrix = np.float32([ [1,0,x_shift], [0,1,y_shift] ])
+    image_shift = cv2.warpAffine(np.squeeze(img), translation_matrix, (num_cols, num_rows))
+    image_shift = image_shift.reshape(96, 96, 1)
+    
+    # shift landmarks
+    if len(landmarks) == 0: return image_shift, landmarks
+    landmarks_shift = landmarks.copy()
+    for i in range(len(landmarks)): 
+        if i % 2 == 0: landmarks_shift[i] = landmarks[i] + x_shift/48
+        else: landmarks_shift[i] = landmarks[i] + y_shift/48
+    
+    return image_shift, landmarks_shift
